@@ -1,0 +1,40 @@
+{
+  "site": {
+    "title": "مؤلفات الشيخ",
+    "author": "سليمان بن أحمد السويد",
+    "subtitle": "مكتبة رقمية تجمع كتب الشيخ ورسائله، تُقرأ كاملةً بتقليب الصفحات كالكتاب الورقي، من الجوال أو الحاسب.",
+    "brandTitle": "مؤلفات الشيخ",
+    "brandSub": "سليمان بن أحمد السويد",
+    "allowDownload": false,
+    "allowPageShare": true,
+    "counter": "",
+    "whatsapp": "966505823451",
+    "preparedDate": "2026-11-10",
+    "newDays": 45,
+    "categories": [
+      "الحديث النبوي"
+    ],
+    "nameArt": "assets/name.svg",
+    "theme": {
+      "primary": "#0E7490",
+      "accent": "#BAE6FD",
+      "bg": "#F0FAFF",
+      "ink": "#164E63",
+      "highlight": "#BAE6FD"
+    },
+    "libraryName": "مؤلفات الشيخ سليمان بن أحمد السويد",
+    "authorName": "سليمان بن أحمد السويد"
+  },
+  "books": [
+    {
+      "id": "book-01",
+      "title": "الأربعون التعليمية - من حديث معلم البشرية ﷺ",
+      "file": "books/book-01.pdf",
+      "cover": "covers/book-01.jpg",
+      "pages": 109,
+      "date": "2020-07-21",
+      "added": "2026-11-10",
+      "category": "الحديث النبوي"
+    }
+  ]
+}
