@@ -154,10 +154,10 @@
 <style>#shelf>noscript{display:block;grid-column:1/-1}.seo-ns{line-height:1.9}.seo-ns h2{font-family:var(--display);color:var(--emerald);margin:0 0 6px}.seo-ns h3{color:var(--gold);margin:22px 0 6px;font-size:18px}.seo-ns ul{margin:0;padding-inline-start:22px}.seo-ns a{color:var(--ink)}</style>
 <section class="seo-ns" aria-label="قائمة الكتب">
 <h2>مؤلفات سليمان بن أحمد السويد — سليمان بن أحمد السويد</h2>
-<p>مكتبة رقمية تجمع الكتب والرسائل، تُقرأ كاملةً بتقليب الصفحات كالكتاب الورقي، من الجوال أو الحاسب: ٦ كتب تُقرأ مجاناً بتقليب الصفحات على الجوال والكمبيوتر.</p>
-<h3>الحديث النبوي</h3><ul><li><a href="kitab/book-01.html">الأربعون التعليمية - من حديث معلم البشرية ﷺ</a></li></ul>
-<h3>مقالات</h3><ul><li><a href="kitab/book-02.html">لغة الجسد في التعليم النبوي</a></li><li><a href="kitab/book-03.html">تنوع أساليب عرض الفكرة في حديث طول الأمل</a></li><li><a href="kitab/book-04.html">التكرار في الحديث النبوي وفوائده التعليمية</a></li><li><a href="kitab/book-05.html">المنهج النبوي في تصحيح المفاهيم</a></li></ul>
-<h3>علوم تربوية</h3><ul><li><a href="kitab/book-06.html">مختصر كتاب ١٠٠ فكرة لإدارة سلوك الطلاب والطالبات</a></li></ul>
+<p>مكتبة رقمية تجمع الكتب والرسائل، تُقرأ كاملةً بتقليب الصفحات كالكتاب الورقي، من الجوال أو الحاسب: ٧ كتب تُقرأ مجاناً بتقليب الصفحات على الجوال والكمبيوتر.</p>
+<h3>العلوم الشرعية</h3><ul><li><a href="kitab/book-01.html">الأربعون التعليمية - من حديث معلم البشرية ﷺ</a></li><li><a href="kitab/book-07.html">هكذا ربّى النبي ﷺ ابن عباس رضي الله عنهما</a></li></ul>
+<h3>العلوم التربوية</h3><ul><li><a href="kitab/book-06.html">مختصر كتاب ١٠٠ فكرة لإدارة سلوك الطلاب والطالبات</a></li></ul>
+<h3>مقالات وكتب متنوعة</h3><ul><li><a href="kitab/book-02.html">لغة الجسد في التعليم النبوي</a></li><li><a href="kitab/book-03.html">تنوع أساليب عرض الفكرة في حديث طول الأمل</a></li><li><a href="kitab/book-04.html">التكرار في الحديث النبوي وفوائده التعليمية</a></li><li><a href="kitab/book-05.html">المنهج النبوي في تصحيح المفاهيم</a></li></ul>
 </section>
 </noscript>
 <!-- SEO:END -->
@@ -339,7 +339,7 @@
     heart: '<path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/>',
     book: '<path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/>'
   };
-  const iconFor = (c) => /^(ال)?علم( |$)|طلب العلم/.test(c) ? ICONS.thesis : /آداب|الآداب|أخلاق|اخلاق/.test(c) ? ICONS.heart : /قرآن|القرآن|تفسير|تجويد/.test(c) ? ICONS.quran : /فقه|أصول|اصول/.test(c) ? ICONS.fiqh : /تصحيح|عقيد|عقائد/.test(c) ? ICONS.tashih
+  const iconFor = (c) => /^(ال)?علم( |$)|طلب العلم/.test(c) ? ICONS.thesis : /آداب|الآداب|أخلاق|اخلاق/.test(c) ? ICONS.heart : /قرآن|القرآن|تفسير|تجويد|شرع/.test(c) ? ICONS.quran : /فقه|أصول|اصول/.test(c) ? ICONS.fiqh : /تصحيح|عقيد|عقائد/.test(c) ? ICONS.tashih
     : /حديث|سنة|السنة/.test(c) ? ICONS.hadith : /سيرة|السيرة/.test(c) ? ICONS.sira : /تربو|تربي|سلوك/.test(c) ? ICONS.tarbiya : /أسر|اسر|الأسرة|زواج/.test(c) ? ICONS.family : /مواعظ|موعظ|رقائق|خطب/.test(c) ? ICONS.mawaith : /دعو/.test(c) ? ICONS.dawah : /رسائل|رسالة|أطروح|ماجستير|دكتوراه/.test(c) ? ICONS.thesis : /علمي|علوم/.test(c) ? ICONS.thesis : ICONS.book;
   const svg = (p) => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + p + "</svg>";
   if (cats.length) {
