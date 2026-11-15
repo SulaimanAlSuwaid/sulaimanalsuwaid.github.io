@@ -12,7 +12,8 @@
     "preparedDate": "2026-11-10",
     "newDays": 45,
     "categories": [
-      "الحديث النبوي"
+      "الحديث النبوي",
+      "مقالات"
     ],
     "nameArt": "assets/name-2.svg",
     "theme": {
@@ -35,6 +36,46 @@
       "date": "2020-07-21",
       "added": "2026-11-10",
       "category": "الحديث النبوي"
+    },
+    {
+      "id": "book-02",
+      "title": "لغة الجسد في التعليم النبوي",
+      "file": "books/book-02.pdf",
+      "cover": "covers/book-02.jpg",
+      "pages": 8,
+      "date": "2015-12-10",
+      "added": "2026-11-15",
+      "category": "مقالات"
+    },
+    {
+      "id": "book-03",
+      "title": "تنوع أساليب عرض الفكرة في حديث طول الأمل",
+      "file": "books/book-03.pdf",
+      "cover": "covers/book-03.jpg",
+      "pages": 4,
+      "date": "2016-01-20",
+      "added": "2026-11-15",
+      "category": "مقالات"
+    },
+    {
+      "id": "book-04",
+      "title": "التكرار في الحديث النبوي وفوائده التعليمية",
+      "file": "books/book-04.pdf",
+      "cover": "covers/book-04.jpg",
+      "pages": 3,
+      "date": "2016-02-22",
+      "added": "2026-11-15",
+      "category": "مقالات"
+    },
+    {
+      "id": "book-05",
+      "title": "المنهج النبوي في تصحيح المفاهيم",
+      "file": "books/book-05.pdf",
+      "cover": "covers/book-05.jpg",
+      "pages": 9,
+      "date": "2018-08-02",
+      "added": "2026-11-15",
+      "category": "مقالات"
     }
   ]
 }
