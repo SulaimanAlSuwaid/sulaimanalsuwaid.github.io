@@ -13,7 +13,8 @@
     "newDays": 45,
     "categories": [
       "الحديث النبوي",
-      "مقالات"
+      "مقالات",
+      "علوم تربوية"
     ],
     "nameArt": "assets/name-2.svg",
     "theme": {
@@ -76,6 +77,16 @@
       "date": "2018-08-02",
       "added": "2026-11-15",
       "category": "مقالات"
+    },
+    {
+      "id": "book-06",
+      "title": "مختصر كتاب ١٠٠ فكرة لإدارة سلوك الطلاب والطالبات",
+      "file": "books/book-06.pdf",
+      "cover": "covers/book-06.jpg",
+      "pages": 33,
+      "date": "2008-04-01",
+      "added": "2026-11-15",
+      "category": "علوم تربوية"
     }
   ]
 }
