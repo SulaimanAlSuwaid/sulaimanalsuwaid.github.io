@@ -5,18 +5,18 @@
 
 - الموقع: https://sulaimanalsuwaid.github.io/
 
-## العلوم الشرعية
+## مجموعة العلوم الشرعية
 
-- [الأربعون التعليمية - من حديث معلم البشرية ﷺ](https://sulaimanalsuwaid.github.io/kitab/book-01.html): العلوم الشرعية، ١٠٩ صفحات
-- [هكذا ربّى النبي ﷺ ابن عباس رضي الله عنهما](https://sulaimanalsuwaid.github.io/kitab/book-07.html): العلوم الشرعية، ٨٦ صفحة
+- [الأربعون التعليمية - من حديث معلم البشرية ﷺ](https://sulaimanalsuwaid.github.io/kitab/book-01.html): مجموعة العلوم الشرعية، ١٠٩ صفحات
+- [هكذا ربّى النبي ﷺ ابن عباس رضي الله عنهما](https://sulaimanalsuwaid.github.io/kitab/book-07.html): مجموعة العلوم الشرعية، ٨٦ صفحة
 
-## العلوم التربوية
+## المجموعة العامة
 
-- [مختصر كتاب ١٠٠ فكرة لإدارة سلوك الطلاب والطالبات](https://sulaimanalsuwaid.github.io/kitab/book-06.html): العلوم التربوية، ٣٣ صفحة
+- [مختصر كتاب ١٠٠ فكرة لإدارة سلوك الطلاب والطالبات](https://sulaimanalsuwaid.github.io/kitab/book-06.html): المجموعة العامة، ٣٣ صفحة
 
-## مقالات وكتب متنوعة
+## مقالات
 
-- [لغة الجسد في التعليم النبوي](https://sulaimanalsuwaid.github.io/kitab/book-02.html): مقالات وكتب متنوعة، ١٩ صفحة
-- [تنوع أساليب عرض الفكرة في حديث طول الأمل](https://sulaimanalsuwaid.github.io/kitab/book-03.html): مقالات وكتب متنوعة، ٨ صفحات
-- [التكرار في الحديث النبوي وفوائده التعليمية](https://sulaimanalsuwaid.github.io/kitab/book-04.html): مقالات وكتب متنوعة، ٧ صفحات
-- [المنهج النبوي في تصحيح المفاهيم](https://sulaimanalsuwaid.github.io/kitab/book-05.html): مقالات وكتب متنوعة، ٢٢ صفحة
+- [لغة الجسد في التعليم النبوي](https://sulaimanalsuwaid.github.io/kitab/book-02.html): مقالات، ١٩ صفحة
+- [تنوع أساليب عرض الفكرة في حديث طول الأمل](https://sulaimanalsuwaid.github.io/kitab/book-03.html): مقالات، ٨ صفحات
+- [التكرار في الحديث النبوي وفوائده التعليمية](https://sulaimanalsuwaid.github.io/kitab/book-04.html): مقالات، ٧ صفحات
+- [المنهج النبوي في تصحيح المفاهيم](https://sulaimanalsuwaid.github.io/kitab/book-05.html): مقالات، ٢٢ صفحة
