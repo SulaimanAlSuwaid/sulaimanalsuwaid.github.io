@@ -553,3 +553,6 @@ body.vm-open{overflow:hidden}
  .pd-act{flex-direction:column}.pd-buy,.pd-o{justify-content:center}.pd-nav{justify-content:center}
 }
 @media (prefers-reduced-motion:reduce){.pd-buy,.pd.in{animation:none}}
+/* منع انزياح الصندوق أفقياً عند التنقل بين الكتب */
+.paper-box{overflow:clip}
+.pd{overflow:clip}
