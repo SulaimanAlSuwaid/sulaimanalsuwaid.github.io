@@ -113,6 +113,26 @@
       "added": "2026-11-16",
       "category": "مجموعة العلوم الشرعية",
       "toc": 117
+    },
+    {
+      "id": "book-09",
+      "title": "العلاقات الإنسانية في الفقه الإسلامي",
+      "file": "books/book-09.pdf",
+      "cover": "covers/book-09.jpg",
+      "pages": 12,
+      "added": "2026-11-16",
+      "category": "مقالات",
+      "pageOffset": 1
+    },
+    {
+      "id": "book-10",
+      "title": "الفردية والجماعية في العبادات",
+      "file": "books/book-10.pdf",
+      "cover": "covers/book-10.jpg",
+      "pages": 8,
+      "added": "2026-11-16",
+      "category": "مقالات",
+      "pageOffset": 1
     }
   ],
   "videos": [
