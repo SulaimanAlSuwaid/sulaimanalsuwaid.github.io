@@ -31,7 +31,7 @@
 <!-- THEME:START (يُولَّد تلقائياً: python3 tools/configure.py) --><style id="lib-theme">:root:root{--t-primary:#0d6b84;--t-primary-rgb:13 107 132;--t-primary-l:#1b748c;--t-primary-2:#0a5063;--t-primary-2-rgb:10 80 99;--t-primary-d:#084455;--t-primary-d-rgb:8 68 85;--t-primary-dd:#063340;--t-primary-dd-rgb:6 51 64;--t-stage:#052b35;--t-stage-rgb:5 43 53;--t-sheet:#07323f;--t-zoom:#04222a;--t-annbar-rgb:6 53 66;--t-accent:#bae6fd;--t-accent-rgb:186 230 253;--t-accent-2-rgb:186 230 253;--t-accent-m:#9ec4d7;--t-accent-text:#0e7490;--t-bg:#f0faff;--t-bg-rgb:240 250 255;--t-bg-2:#e6f6ff;--t-card:#fbfeff;--t-soft:#e9f7ff;--t-line:#dceff8;--t-line-2:#dbedf6;--t-ink:#134557;--t-ink-rgb:19 69 87;--t-muted:#567b89;--t-muted-2:#5c808f;--t-on-dark-2:#e6f6ff;--t-on-dark-3:#ebf8ff;--t-placeholder:#7796a3;--t-chip:#e7f3f8;--t-chip-h:#e5f6ff;--t-tint:#e6f6ff;--t-tint-2:#edf9ff;--t-pg:#f7fcff;--t-pg-2:#ebf8ff;--t-pg-ink:#b1d4e5;--t-fan:#073b49;--t-line-h:#cae5f2;--t-line-h2:#cbe5f2;--t-frame:#e6f4fb;--t-frame-2:#dff1fa;--t-frame-h:#def0fa;--t-frame-h2:#d7edf8;--t-dot:#a5c5d4;--t-highlight:#bae6fd;--t-pat:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23bae6fd' stroke-width='.7' stroke-opacity='.22'%3E%3Cpath d='M42 18l7 17 17 7-17 7-7 17-7-17-17-7 17-7z'/%3E%3Crect x='27' y='27' width='30' height='30' transform='rotate(45 42 42)'/%3E%3Ccircle cx='42' cy='42' r='5'/%3E%3Cpath d='M0 0l12 12M84 0L72 12M0 84l12-12M84 84L72 72'/%3E%3C/g%3E%3C/svg%3E")}</style><!-- THEME:END -->
 <script>try{var _t=localStorage.getItem("lib-theme:"+location.pathname.replace(/[^/]*$/,""));if(_t){var _s=document.getElementById("lib-theme")||document.createElement("style");_s.id="lib-theme";_s.textContent=_t;if(!_s.parentNode)document.head.appendChild(_s)}}catch(e){}</script>
 <link rel="stylesheet" href="assets/style.css?v=43">
-<link rel="stylesheet" href="assets/home.css?v=48">
+<link rel="stylesheet" href="assets/home.css?v=49">
 </head>
 <body class="home">
 <div class="datebar" id="today" aria-label="تاريخ اليوم"></div>
@@ -43,6 +43,7 @@
       <span class="brand-txt"><b id="bTitle">المكتبة</b><small id="bAuthor"></small></span>
     </a>
     <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#paper">الكتب الورقية</a>
       <a href="#colls">المجموعات العلمية</a>
       <a href="#vids">المرئيات</a>
       <a href="#library">جميع الكتب</a>
@@ -103,6 +104,58 @@
 </div>
 
 <!-- قسم «التعريف ببعض الكتب» (مقاطع التعريف). لإضافة مقطع: انسخ بطاقة pr-card وغيّر data-yt ورابط يوتيوب واسم الكتاب ورقم الحلقة -->
+<!-- قسم «الكتب الورقية»: البيانات من books.json ← paper [{title, sub, cover, note, desc[], yt, read}]. بلا غلاف ← يظهر «الغلاف قيد الرفع» -->
+<section class="paper" id="paper" aria-labelledby="paperH" hidden><div class="wrap"><div class="paper-box">
+  <div class="paper-head"><span class="paper-kick">📚 متوفرة مطبوعة</span><h2 id="paperH">الكتب الورقية</h2><p>مؤلفات مطبوعة يمكن طلب نسختها الورقية مباشرة عبر واتساب. اختر كتاباً من الرف لعرض نبذته.</p></div>
+  <div class="pshelf-wrap"><div class="pshelf" id="pShelf" role="tablist" aria-label="الكتب الورقية"></div><div class="pshelf-board" aria-hidden="true"></div></div>
+  <div class="pd" id="pd" role="tabpanel" aria-live="polite"></div>
+</div></div></section>
+<script>
+(function () {
+  const esc = (t) => String(t || "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const AR = (n) => String(n).replace(/\d/g, (d) => "٠١٢٣٤٥٦٧٨٩"[d]);
+  const WA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>';
+  function cover(b, big) {
+    return b.cover ? '<img src="' + esc(b.cover) + '" alt="غلاف ' + esc(b.title) + '"' + (big ? "" : ' loading="lazy"') + ">"
+      : '<span class="ph"><b>' + esc(b.title) + '</b><i>الغلاف قيد الرفع</i></span>';
+  }
+  function render(data) {
+    const list = (Array.isArray(data.paper) ? data.paper : []).filter((b) => b && b.title);
+    if (!list.length) return;
+    const wa = String((data.site || {}).whatsapp || "").replace(/\D/g, "");
+    const shelf = document.getElementById("pShelf"), pd = document.getElementById("pd");
+    list.forEach((b, i) => {
+      const t = document.createElement("button"); t.type = "button"; t.className = "sb"; t.setAttribute("role", "tab"); t.title = b.title;
+      t.innerHTML = '<span class="sb-c">' + cover(b) + "</span>";
+      t.addEventListener("click", () => show(i, true)); shelf.appendChild(t);
+    });
+    function show(i, user) {
+      const b = list[i];
+      [...shelf.children].forEach((x, k) => { x.classList.toggle("on", k === i); x.setAttribute("aria-selected", k === i); });
+      if (user) shelf.children[i].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+      const msg = "السلام عليكم ورحمة الله وبركاته،\nأرغب في طلب نسخة ورقية من كتاب «" + b.title + "».";
+      const desc = (b.desc || []).map((x) => /^الكتاب (الأول|الثاني|الثالث)\s*:/.test(x) ? "<h4>" + esc(x.replace(/\s*\.$/, "")) + "</h4>" : "<p>" + esc(x) + "</p>").join("");
+      pd.innerHTML =
+        '<div class="pd-cover">' + cover(b, true) + "</div>" +
+        '<div class="pd-body"><div class="pd-top"><span class="pd-tag">📖 نسخة ورقية مطبوعة</span><span class="pd-n">' + AR(i + 1) + " / " + AR(list.length) + "</span></div>" +
+        "<h3>" + esc(b.title) + "</h3>" + (b.sub ? '<div class="pd-sub">' + esc(b.sub) + "</div>" : "") +
+        (b.note ? '<div class="pd-note">' + esc(b.note) + "</div>" : "") + '<div class="pd-desc">' + desc + "</div>" +
+        '<div class="pd-act">' + (wa ? '<a class="pd-buy" target="_blank" rel="noopener" href="https://wa.me/' + wa + "?text=" + encodeURIComponent(msg) + '">' + WA + "اطلب نسختك عبر واتساب</a>" : "") +
+        (b.yt ? '<button type="button" class="pd-o pd-vid">▶ شاهد التعريف بالكتاب</button>' : "") +
+        (b.read ? '<a class="pd-o" href="read.html?id=' + encodeURIComponent(b.read) + '">اقرأ النسخة الرقمية ←</a>' : "") + "</div>" +
+        '<div class="pd-nav"><button type="button" class="pd-prev" aria-label="الكتاب السابق">→</button><button type="button" class="pd-next" aria-label="الكتاب التالي">←</button></div></div>';
+      pd.classList.remove("in"); void pd.offsetWidth; pd.classList.add("in");
+      pd.querySelector(".pd-prev").onclick = () => show((i - 1 + list.length) % list.length, true);
+      pd.querySelector(".pd-next").onclick = () => show((i + 1) % list.length, true);
+      const v = pd.querySelector(".pd-vid");
+      if (v) v.onclick = () => { if (window.__playVideo) window.__playVideo({ yt: b.yt, title: "تعريف بكتاب «" + b.title + "»" }); };
+    }
+    show(0, false);
+    document.getElementById("paper").hidden = false;
+  }
+  if (window.__lib) render(window.__lib); else document.addEventListener("lib:ready", () => render(window.__lib), { once: true });
+})();
+</script>
 <section class="praise" id="praise" aria-labelledby="prH"><div class="wrap">
 <div class="pr-head"><span class="pr-kick">تعريف مرئي</span><h2 id="prH">التعريف ببعض الكتب</h2><p>تعريف بمؤلفاته في برامج علمية، يُشغَّل المقطع داخل الموقع.</p></div>
 <div class="pr-grid"><article class="pr-card has-book"><button class="pr-video" type="button" data-yt="YWhyugi6Au8" aria-label="تشغيل المقطع عن كتاب الأربعون التعليمية"><span class="pv-beam" aria-hidden="true"></span><span class="pv-live"><i></i>مقطع مرئي</span><span class="pv-q">❝</span><span class="pv-dur">1:12</span><span class="pv-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span><span class="pv-t"><span class="pv-book" aria-hidden="true"><svg viewBox="0 0 64 40"><path d="M32 8C24 2 12 2 4 5v31c8-3 20-3 28 3 8-6 20-6 28-3V5c-8-3-20-3-28 3z"/><path d="M32 8v31"/><path d="M10 12c5-1.5 11-1.2 16 1M10 18c5-1.5 11-1.2 16 1M10 24c5-1.5 11-1.2 16 1M38 13c5-2.5 11-2.8 16-1M38 19c5-2.5 11-2.8 16-1M38 25c5-2.5 11-2.8 16-1"/></svg></span><small>عن كتاب</small><b>الأربعون التعليمية</b></span></button>
@@ -150,6 +203,7 @@
     cap.innerHTML = "<b>" + esc(v.title) + "</b>" + (v.sub ? "<span>" + esc(v.sub) + "</span>" : "") + '<a href="https://www.youtube.com/watch?v=' + encodeURIComponent(v.yt) + '" target="_blank" rel="noopener">يوتيوب ↗</a>';
     modal.hidden = false; document.body.classList.add("vm-open"); document.getElementById("vmX").focus();
   }
+  window.__playVideo = open;
   function close() { modal.hidden = true; frame.innerHTML = ""; document.body.classList.remove("vm-open"); }
   document.getElementById("vmX").addEventListener("click", close);
   modal.addEventListener("click", (e) => { if (e.target === modal) close(); });
