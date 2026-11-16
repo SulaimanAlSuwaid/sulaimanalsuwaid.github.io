@@ -133,6 +133,16 @@
       "added": "2026-11-16",
       "category": "مقالات",
       "pageOffset": 1
+    },
+    {
+      "id": "book-11",
+      "title": "عجوز بني إسرائيل",
+      "file": "books/book-11.pdf",
+      "cover": "covers/book-11.jpg",
+      "pages": 10,
+      "added": "2026-11-16",
+      "category": "مقالات",
+      "pageOffset": 1
     }
   ],
   "videos": [
