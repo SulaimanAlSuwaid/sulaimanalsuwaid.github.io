@@ -556,3 +556,8 @@ body.vm-open{overflow:hidden}
 /* منع انزياح الصندوق أفقياً عند التنقل بين الكتب */
 .paper-box{overflow:clip}
 .pd{overflow:clip}
+/* زر الطلب من متجر الناشر (بدل واتساب لكتب محددة) */
+.pd-buy.pd-store{background:var(--t-accent);color:var(--t-primary-dd);box-shadow:0 10px 22px rgba(var(--t-accent-rgb)/.35);animation:pdStore 2.6s ease-in-out infinite}
+.pd-buy.pd-store:hover{box-shadow:0 14px 28px rgba(var(--t-accent-rgb)/.5)}
+@keyframes pdStore{0%,100%{box-shadow:0 10px 22px rgba(var(--t-accent-rgb)/.35),0 0 0 0 rgba(var(--t-accent-rgb)/.55)}50%{box-shadow:0 10px 22px rgba(var(--t-accent-rgb)/.35),0 0 0 8px rgba(var(--t-accent-rgb)/0)}}
+@media (prefers-reduced-motion:reduce){.pd-buy.pd-store{animation:none}}
