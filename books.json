@@ -117,9 +117,9 @@
     {
       "id": "book-09",
       "title": "العلاقات الإنسانية في الفقه الإسلامي",
-      "file": "books/book-09.pdf",
+      "file": "books/book-09.pdf?v=2",
       "cover": "covers/book-09.jpg",
-      "pages": 12,
+      "pages": 13,
       "added": "2026-11-16",
       "category": "مقالات",
       "pageOffset": 1
