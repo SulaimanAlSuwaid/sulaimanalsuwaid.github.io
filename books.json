@@ -155,6 +155,16 @@
       "category": "مجموعة العلوم الشرعية",
       "toc": 174,
       "pageOffset": 1
+    },
+    {
+      "id": "book-13",
+      "title": "مفهوم الانغلاق الفكري",
+      "file": "books/book-13.pdf",
+      "cover": "covers/book-13.jpg",
+      "pages": 16,
+      "added": "2026-11-18",
+      "category": "مقالات",
+      "pageOffset": 1
     }
   ],
   "videos": [
