@@ -39,7 +39,7 @@
           fetchJSON(api + "books"),
           fetchJSON(api + "covers").catch(() => []),
         ]);
-        const known = new Set(data.books.map((b) => b.file));
+        const known = new Set(data.books.map((b) => String(b.file || "").split("?")[0])); // ?v=2 لكسر الكاش لا يجعل الكتاب «جديداً»
         const covers = {};
         (cv || []).forEach((f) => { if (IMG_EXT.test(f.name)) covers[f.name.replace(IMG_EXT, "")] = "covers/" + f.name; });
         (bk || []).forEach((f) => {
