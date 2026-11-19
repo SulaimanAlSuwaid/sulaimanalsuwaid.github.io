@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-19T22:07Z",
- "total": 84,
- "last28": 84,
+ "updated": "2026-11-19T23:03Z",
+ "total": 85,
+ "last28": 85,
  "countries": [
   {
    "code": "SA",
@@ -56,6 +56,11 @@
   {
    "code": "MR",
    "name": "Mauritania",
+   "count": 1
+  },
+  {
+   "code": "PS",
+   "name": "Palestine",
    "count": 1
   },
   {
