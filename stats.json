@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-19T12:14Z",
- "total": 57,
- "last28": 57,
+ "updated": "2026-11-19T18:08Z",
+ "total": 63,
+ "last28": 63,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 49
+   "count": 50
   },
   {
    "code": "SG",
@@ -14,13 +14,33 @@
    "count": 6
   },
   {
+   "code": "DZ",
+   "name": "Algeria",
+   "count": 2
+  },
+  {
    "code": "EG",
    "name": "Egypt",
    "count": 1
   },
   {
+   "code": "KG",
+   "name": "Kyrgyzstan",
+   "count": 1
+  },
+  {
    "code": "MO",
    "name": "Macao",
+   "count": 1
+  },
+  {
+   "code": "MR",
+   "name": "Mauritania",
+   "count": 1
+  },
+  {
+   "code": "US",
+   "name": "United States",
    "count": 1
   }
  ]
