@@ -165,6 +165,17 @@
       "added": "2026-11-18",
       "category": "مقالات",
       "pageOffset": 1
+    },
+    {
+      "id": "book-14",
+      "title": "فقه الإمام أحمد بن حنبل في آيات الأحكام (قسم العبادات)",
+      "file": "books/book-14.pdf",
+      "cover": "covers/book-14.jpg",
+      "pages": 424,
+      "date": "2008-01-10",
+      "added": "2026-11-19",
+      "category": "مجموعة العلوم الشرعية",
+      "toc": 419
     }
   ],
   "videos": [
@@ -308,7 +319,8 @@
       "sub": "قسم العبادات",
       "buy": "https://daralsomaies.com/%D9%81%D9%82%D9%87-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D9%85-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A8%D9%86-%D8%AD%D9%86%D8%A8%D9%84-%D9%82%D8%B3%D9%85-%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D8%AF%D8%A7%D8%AA-%D8%AA-%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86-%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF/p467575013",
       "store": "دار الصميعي",
-      "alsoWa": true
+      "alsoWa": true,
+      "read": "book-14"
     },
     {
       "title": "الأربعون التعليمية",
