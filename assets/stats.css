@@ -74,6 +74,7 @@ html.sx-lock,html.sx-lock body{overflow:hidden}
 .sx-all:hover{background:var(--t-soft)}
 
 /* المنحنى */
+.sx-seg:empty{display:none}
 .sx-seg{display:inline-flex;padding:3px;border-radius:12px;background:var(--t-soft)}
 .sx-seg button{border:0;background:transparent;font:inherit;font-size:13px;padding:6px 12px;border-radius:9px;color:var(--t-muted);cursor:pointer;transition:background .2s,color .2s}
 .sx-seg button[aria-selected="true"]{background:var(--t-card);color:var(--t-primary);font-weight:700;box-shadow:0 2px 8px -4px rgb(var(--t-primary-dd-rgb) / .35)}
