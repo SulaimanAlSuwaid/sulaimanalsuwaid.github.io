@@ -41,12 +41,50 @@ try:
 except Exception as e:
     print("locations:", e); sys.exit(1)
 
+# ===== تفاصيل صفحة «الإحصاءات التفصيلية» (كل جزء مستقل: إن فشل يُترك فارغاً) =====
+daily = []
+try:
+    s90 = (datetime.date.today() - datetime.timedelta(days=89)).isoformat()
+    t = get(f"stats/total?start={s90}&end={end}")
+    for d in t.get("stats", []) or []:
+        day = str(d.get("day", ""))[:10]
+        if day: daily.append([day, int(d.get("daily") or 0)])
+    daily.sort()
+    daily = [d for d in daily if d[0] <= datetime.date.today().isoformat()]
+except Exception as e:
+    print("daily:", e)
+
+pages = []
+try:
+    h = get(f"stats/hits?{qs}&limit=100")
+    for x in h.get("hits", []) or []:
+        p = str(x.get("path", ""))
+        n = int(x.get("count") or 0)
+        if p.startswith("/book/") and n: pages.append({"path": p, "count": n})
+    pages.sort(key=lambda x: -x["count"])
+except Exception as e:
+    print("pages:", e)
+
+def simple(page, limit=20):
+    out = []
+    try:
+        for x in get(f"stats/{page}?{qs}&limit={limit}").get("stats", []) or []:
+            n = int(x.get("count") or 0)
+            if n: out.append({"id": str(x.get("id") or ""), "name": str(x.get("name") or ""), "count": n})
+    except Exception as e:
+        print(page + ":", e)
+    return out
+
+refs = simple("toprefs", 20)
+sizes = simple("sizes", 10)
+
 # دمج الأقاليم في دولها
 merged = {}
 for c in countries:
     m = merged.setdefault(c["code"], {"code": c["code"], "name": c["name"], "count": 0}); m["count"] += c["count"]
 out = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "total": total, "last28": last28,
-       "countries": sorted(merged.values(), key=lambda x: -x["count"])}
+       "countries": sorted(merged.values(), key=lambda x: -x["count"]),
+       "daily": daily, "pages": pages, "refs": refs, "sizes": sizes}
 old = None
 try: old = json.load(open("stats.json", encoding="utf-8"))
 except Exception: pass
