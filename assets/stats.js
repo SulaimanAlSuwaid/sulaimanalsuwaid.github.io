@@ -52,7 +52,7 @@
     [/google/i, "قوقل"], [/bing/i, "بينق"], [/yahoo/i, "ياهو"], [/duckduckgo/i, "دك دك قو"], [/yandex/i, "ياندكس"],
     [/whatsapp|wa\.me/i, "واتساب"], [/t\.co$|twitter|x\.com/i, "إكس (تويتر)"], [/telegram|t\.me/i, "تيليجرام"],
     [/youtube|youtu\.be/i, "يوتيوب"], [/facebook|fb\./i, "فيسبوك"], [/instagram/i, "إنستقرام"], [/snapchat/i, "سناب شات"],
-    [/linkedin|lnkd/i, "لينكدإن"], [/tiktok/i, "تيك توك"], [/github/i, "GitHub"], [/chatgpt|openai/i, "ChatGPT"], [/claude|anthropic/i, "Claude"],
+    [/beacons|linktr\.ee|linktree/i, "صفحة الروابط (Beacons)"], [/linkedin|lnkd/i, "لينكدإن"], [/tiktok/i, "تيك توك"], [/github/i, "GitHub"], [/chatgpt|openai/i, "ChatGPT"], [/claude|anthropic/i, "Claude"],
   ];
   function srcName(r) {
     const n = (r.name || r.id || "").trim();
