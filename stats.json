@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-20T15:14Z",
- "total": 115,
- "last28": 115,
+ "updated": "2026-11-20T16:16Z",
+ "total": 121,
+ "last28": 121,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 75
+   "count": 80
   },
   {
    "code": "EG",
@@ -26,7 +26,7 @@
   {
    "code": "DZ",
    "name": "Algeria",
-   "count": 2
+   "count": 3
   },
   {
    "code": "US",
@@ -448,7 +448,7 @@
   ],
   [
    "2026-11-20",
-   35
+   41
   ]
  ],
  "pages": [
@@ -497,12 +497,12 @@
   {
    "id": "beacons.ai",
    "name": "beacons.ai",
-   "count": 42
+   "count": 45
   },
   {
    "id": "",
    "name": "",
-   "count": 35
+   "count": 37
   },
   {
    "id": "www.facebook.com",
@@ -514,7 +514,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 101
+   "count": 107
   },
   {
    "id": "tablet",
