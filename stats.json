@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-20T07:39Z",
- "total": 99,
- "last28": 99,
+ "updated": "2026-11-20T09:21Z",
+ "total": 104,
+ "last28": 104,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 62
+   "count": 65
   },
   {
    "code": "EG",
@@ -29,8 +29,18 @@
    "count": 2
   },
   {
+   "code": "US",
+   "name": "United States",
+   "count": 2
+  },
+  {
    "code": "DE",
    "name": "Germany",
+   "count": 1
+  },
+  {
+   "code": "IE",
+   "name": "Ireland",
    "count": 1
   },
   {
@@ -71,11 +81,6 @@
   {
    "code": "SO",
    "name": "Somalia",
-   "count": 1
-  },
-  {
-   "code": "US",
-   "name": "United States",
    "count": 1
   },
   {
