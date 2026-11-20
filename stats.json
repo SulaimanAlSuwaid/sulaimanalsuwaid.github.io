@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-19T23:58Z",
- "total": 88,
- "last28": 88,
+ "updated": "2026-11-20T04:14Z",
+ "total": 90,
+ "last28": 90,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 60
+   "count": 61
   },
   {
    "code": "EG",
@@ -41,6 +41,11 @@
   {
    "code": "KG",
    "name": "Kyrgyzstan",
+   "count": 1
+  },
+  {
+   "code": "LB",
+   "name": "Lebanon",
    "count": 1
   },
   {
