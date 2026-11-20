@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-20T04:14Z",
- "total": 90,
- "last28": 90,
+ "updated": "2026-11-20T05:23Z",
+ "total": 91,
+ "last28": 91,
  "countries": [
   {
    "code": "SA",
@@ -66,6 +66,11 @@
   {
    "code": "PS",
    "name": "Palestine",
+   "count": 1
+  },
+  {
+   "code": "SO",
+   "name": "Somalia",
    "count": 1
   },
   {
