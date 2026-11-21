@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T05:13Z",
- "total": 129,
- "last28": 129,
+ "updated": "2026-11-21T06:14Z",
+ "total": 130,
+ "last28": 130,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 88
+   "count": 89
   },
   {
    "code": "EG",
@@ -448,7 +448,7 @@
   ],
   [
    "2026-11-21",
-   6
+   7
   ]
  ],
  "pages": [
@@ -502,7 +502,7 @@
   {
    "id": "",
    "name": "",
-   "count": 37
+   "count": 38
   },
   {
    "id": "www.facebook.com",
@@ -519,7 +519,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 115
+   "count": 116
   },
   {
    "id": "tablet",
