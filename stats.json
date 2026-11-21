@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T16:00Z",
- "total": 139,
- "last28": 139,
+ "updated": "2026-11-21T17:02Z",
+ "total": 140,
+ "last28": 140,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 97
+   "count": 98
   },
   {
    "code": "EG",
@@ -448,7 +448,7 @@
   ],
   [
    "2026-11-21",
-   16
+   17
   ]
  ],
  "pages": [
@@ -485,6 +485,10 @@
    "count": 2
   },
   {
+   "path": "/book/book-05",
+   "count": 1
+  },
+  {
    "path": "/book/book-11",
    "count": 1
   },
@@ -519,7 +523,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 124
+   "count": 125
   },
   {
    "id": "tablet",
