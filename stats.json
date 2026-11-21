@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-21T17:57Z",
- "total": 141,
- "last28": 141,
+ "updated": "2026-11-21T19:59Z",
+ "total": 142,
+ "last28": 142,
  "countries": [
   {
    "code": "SA",
@@ -27,6 +27,11 @@
    "code": "DZ",
    "name": "Algeria",
    "count": 3
+  },
+  {
+   "code": "MA",
+   "name": "Morocco",
+   "count": 2
   },
   {
    "code": "US",
@@ -61,11 +66,6 @@
   {
    "code": "LB",
    "name": "Lebanon",
-   "count": 1
-  },
-  {
-   "code": "MA",
-   "name": "Morocco",
    "count": 1
   },
   {
@@ -448,7 +448,7 @@
   ],
   [
    "2026-11-21",
-   18
+   19
   ]
  ],
  "pages": [
@@ -501,7 +501,7 @@
   {
    "id": "beacons.ai",
    "name": "beacons.ai",
-   "count": 57
+   "count": 58
   },
   {
    "id": "",
@@ -523,7 +523,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 126
+   "count": 127
   },
   {
    "id": "tablet",
