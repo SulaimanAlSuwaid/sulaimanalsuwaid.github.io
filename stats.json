@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T16:00Z",
- "total": 146,
- "last28": 146,
+ "updated": "2026-11-22T19:10Z",
+ "total": 147,
+ "last28": 147,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 102
+   "count": 103
   },
   {
    "code": "EG",
@@ -448,7 +448,7 @@
   ],
   [
    "2026-11-22",
-   3
+   4
   ]
  ],
  "pages": [
@@ -501,7 +501,7 @@
   {
    "id": "beacons.ai",
    "name": "beacons.ai",
-   "count": 59
+   "count": 60
   },
   {
    "id": "",
@@ -523,7 +523,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 130
+   "count": 131
   },
   {
    "id": "tablet",
