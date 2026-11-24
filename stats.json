@@ -1,17 +1,17 @@
 {
- "updated": "2026-11-24T06:15Z",
- "total": 163,
- "last28": 163,
+ "updated": "2026-11-24T07:46Z",
+ "total": 168,
+ "last28": 168,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 115
+   "count": 116
   },
   {
    "code": "EG",
    "name": "Egypt",
-   "count": 20
+   "count": 23
   },
   {
    "code": "SG",
@@ -81,6 +81,11 @@
   {
    "code": "PS",
    "name": "Palestine",
+   "count": 1
+  },
+  {
+   "code": "SD",
+   "name": "Sudan",
    "count": 1
   },
   {
@@ -448,7 +453,7 @@
   ],
   [
    "2026-11-24",
-   3
+   8
   ]
  ],
  "pages": [
@@ -458,11 +463,11 @@
   },
   {
    "path": "/book/book-06",
-   "count": 6
+   "count": 7
   },
   {
    "path": "/book/book-14",
-   "count": 5
+   "count": 6
   },
   {
    "path": "/book/book-01",
@@ -501,7 +506,7 @@
   {
    "id": "beacons.ai",
    "name": "beacons.ai",
-   "count": 68
+   "count": 70
   },
   {
    "id": "",
@@ -523,7 +528,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 146
+   "count": 150
   },
   {
    "id": "tablet",
