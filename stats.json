@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T07:45Z",
- "total": 185,
- "last28": 185,
+ "updated": "2026-11-25T09:34Z",
+ "total": 186,
+ "last28": 186,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 131
+   "count": 132
   },
   {
    "code": "EG",
@@ -458,7 +458,7 @@
   ],
   [
    "2026-11-25",
-   9
+   10
   ]
  ],
  "pages": [
@@ -516,7 +516,7 @@
   {
    "id": "",
    "name": "",
-   "count": 53
+   "count": 54
   },
   {
    "id": "t.co",
@@ -538,7 +538,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 165
+   "count": 166
   },
   {
    "id": "tablet",
