@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-26T14:30Z",
- "total": 198,
- "last28": 198,
+ "updated": "2026-11-26T23:17Z",
+ "total": 199,
+ "last28": 199,
  "countries": [
   {
    "code": "SA",
@@ -19,14 +19,14 @@
    "count": 6
   },
   {
-   "code": "SY",
-   "name": "Syria",
+   "code": "DZ",
+   "name": "Algeria",
    "count": 4
   },
   {
-   "code": "DZ",
-   "name": "Algeria",
-   "count": 3
+   "code": "SY",
+   "name": "Syria",
+   "count": 4
   },
   {
    "code": "LY",
@@ -511,7 +511,7 @@
   {
    "id": "beacons.ai",
    "name": "beacons.ai",
-   "count": 78
+   "count": 79
   },
   {
    "id": "",
@@ -538,7 +538,7 @@
   {
    "id": "phone",
    "name": "",
-   "count": 177
+   "count": 178
   },
   {
    "id": "tablet",
