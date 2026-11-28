@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-28T07:40Z",
- "total": 211,
- "last28": 211,
+ "updated": "2026-11-28T12:03Z",
+ "total": 212,
+ "last28": 212,
  "countries": [
   {
    "code": "SA",
    "name": "Saudi Arabia",
-   "count": 155
+   "count": 156
   },
   {
    "code": "EG",
@@ -463,7 +463,7 @@
   ],
   [
    "2026-11-28",
-   7
+   8
   ]
  ],
  "pages": [
@@ -553,7 +553,7 @@
   {
    "id": "desktop",
    "name": "",
-   "count": 15
+   "count": 16
   },
   {
    "id": "desktophd",
